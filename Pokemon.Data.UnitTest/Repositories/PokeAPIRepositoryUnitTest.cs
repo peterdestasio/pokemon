@@ -66,7 +66,7 @@ namespace Pokemon.Data.UnitTest
             //act
             var actual = await _pokeAPIRepository.GetSpeciesAsync(pokemonName);
 
-            //Assert
+            //assert
             Assert.IsNull(actual);
         }
 
