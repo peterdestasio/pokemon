@@ -14,7 +14,7 @@
 
 
 ### Example usage
-http://localhost:44340/pokemon/<pokemon-character>
+http://localhost:44340/pokemon/pokemon-character-name
 
 ## Built With
 
