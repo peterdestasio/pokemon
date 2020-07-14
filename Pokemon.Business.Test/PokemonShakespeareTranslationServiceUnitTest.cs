@@ -100,7 +100,6 @@ namespace Pokemon.Business.Test
             //arrange
             string description = "description";
             Translation translation = new Translation { Contents = new Contents { Translated = null } };
-
             _shakespeareTranslatorRepositoryMock.Setup(x => x.GetShakespeareTranslationAsync(description))
                 .ReturnsAsync(translation);
             _escapeServiceMock.Setup(x => x.EscapeString(description)).Returns(description);

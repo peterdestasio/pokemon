@@ -27,8 +27,8 @@ namespace Pokemon.Business.Services
         public async Task<string> GetShakespeareTranslationAsync(string description)
         {
             var escaped = _escapeService.EscapeString(description);
-            var funTranslation = await _shakespeareTranslatorRepository.GetShakespeareTranslationAsync(escaped);
-            return funTranslation?.Contents?.Translated;
+            var translation = await _shakespeareTranslatorRepository.GetShakespeareTranslationAsync(escaped);
+            return translation?.Contents?.Translated;
         }
 
     }
