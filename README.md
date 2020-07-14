@@ -12,6 +12,10 @@
 ### Prerequisites
 .NET Core 3.1
 
+
+### Example usage
+http://localhost:44340/pokemon/<pokemon-character>
+
 ## Built With
 
 * [Visual Studio](https://visualstudio.microsoft.com/vs/community/) 
