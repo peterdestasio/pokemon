@@ -1,7 +1,7 @@
 # pokemon shakespeare translator api
 
 ## Getting Started
-1. Open Visual Studio and make sure you have .NET Core 3.1 installed.
+1. Open Visual Studio and open the Pokemon.sln located in the main folder of the project and make sure you have .NET Core 3.1 installed.
 2. Click the Run button to run it under IIS Express
 3. To run test: Test -> Run all tests
 
