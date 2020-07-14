@@ -25,7 +25,7 @@ namespace Pokemon.UnitTest
         [TestMethod]
         public async Task Test_GetPokemonWithShakespeareDescriptionAsync_Return200_Translation()
         {
-            //act
+            //arrange
             string pokemonName = "pikachu";
             string description = "pikachu description";
             string translatedDescription = "skakespeare description";
@@ -34,7 +34,7 @@ namespace Pokemon.UnitTest
             _pokemonShakespeareTranslationServiceMock.Setup(x => x.GetShakespeareTranslationAsync(description))
                 .ReturnsAsync(translatedDescription);
 
-            //arrange
+            //act
             var result = (ObjectResult)await _pokemonShakespeareController.GetPokemonWithShakespeareDescriptionAsync(pokemonName);
             var response = (PokemonResponse)result.Value;
 
